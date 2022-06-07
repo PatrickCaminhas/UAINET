@@ -1,0 +1,65 @@
+    -- Apaga a tabela Contrato caso exista
+    DROP TABLE IF EXISTS CONTRATO CASCADE;    
+
+    -- Apaga a tabela Cliente caso exista
+    DROP TABLE IF EXISTS CLIENTE CASCADE;
+
+    -- Cria a tabela Cliente
+    CREATE TABLE CLIENTE
+    (
+        Nome				VARCHAR(15)			NOT NULL,
+        Sobrenome 			VARCHAR(15)			NOT NULL,
+        Cpf 				CHAR(14) 			NOT NULL,
+        Telefone 			CHAR(17)			NOT NULL,
+        Endereco 			VARCHAR(100),
+        PRIMARY KEY (cpf),
+        Unique (telefone)
+    );
+
+    -- Apaga a tabela Plano caso exista
+    DROP TABLE IF EXISTS PLANO CASCADE;
+
+   -- Cria tabela Plano
+    CREATE TABLE PLANO
+    (
+        PCodigo					Serial			NOT NULL,
+        Nome					VARCHAR(40) 	        NOT NULL,
+        Velocidade 				VARCHAR(5) 		NOT NULL,
+        Valor					FLOAT,
+	Antenas_Equip				INTEGER,
+        PRIMARY KEY (PCodigo),
+        UNIQUE (Nome)
+    );
+
+    -- Apaga a tabela Equipamento caso exista
+    DROP TABLE IF EXISTS EQUIPAMENTO CASCADE;
+
+    -- Cria tabela Equipamento
+    CREATE TABLE EQUIPAMENTO
+    (
+        Num_Serie				VARCHAR(10) 		NOT NULL,
+	Num_Antenas				INTEGER 	        NOT NULL,
+        Modelo					VARCHAR(20) 	        NOT NULL,
+        Marca					VARCHAR(15) 		NOT NULL,
+        Preco					FLOAT,
+        PRIMARY KEY (Num_Serie)
+    );
+
+
+    -- Cria tabela Contrato
+    CREATE TABLE CONTRATO
+    (
+        CNumero					Serial			NOT NULL,
+        Endereco 				VARCHAR(140)		NOT NULL,		
+        Data_inicio				DATE	        	NOT NULL,
+        Data_fim				DATE				, 
+        CCpf 					CHAR(14) 		NOT NULL,
+        PCod					BIGINT 			UNSIGNED,
+        ECod					VARCHAR(10)		NOT NULL,
+        PRIMARY KEY (CNumero),
+        UNIQUE (endereco),
+	UNIQUE (ECod),
+        FOREIGN KEY (CCpf) REFERENCES CLIENTE (Cpf),
+        FOREIGN KEY (PCod) REFERENCES PLANO (PCodigo),
+        FOREIGN KEY (ECod) REFERENCES EQUIPAMENTO (Num_Serie)
+    );

@@ -1,0 +1,59 @@
+-- Insere tuplas em Cliente
+    INSERT INTO cliente
+    VALUES
+    	('Jorge', 'Brito', '888.665.555-76', '(00) 84848-8558', 'Rua 1, 35, Alvorada, Joao Monlevade, MG, 12345'),
+    	('Tarantino', 'Silva', '999.999.999-99', '(00) 18448-9848', 'Rua Django, 85, Laranjeiras, Joao Monlevade, MG, 65489'),
+    	('Lucas', 'Silva', '111.111.222-22', '(00) 18448-7978', 'Rua 33, 99, Carneirinhos, Joao Monlevade, MG, 68798'),
+    	('Pedro', 'Bonfim', '255.566.668-79', '(01) 11114-8558', 'Rua Semfim, 54, Industrial, Joao Monlevade, MG, 59786'),
+    	('Maria', 'Marta', '256.879.668-79', '(00) 11115-8558', 'Rua Pera, 78, Carneirinhos, Joao Monlevade, MG, 54987'),
+    	('Sara', 'Rocha', '875.665.486-87', '(01) 18448-8558', 'Rua Hurt, 65, Loanda, Joao Monlevade, MG, 67986'),
+    	('Luke', 'Walter', '111.486.975-76', '(01) 93333-8558', 'Rua Nohand, 3, Industrial, Joao Monlevade, MG, 79865'),
+	('Sergio', 'Yoda', '888.332.975-76', '(01) 93548-7988', 'Rua Dagobah, 9, Republica, Joao Monlevade, MG, 69985'),
+	('Jonh', 'Water', '898.487.975-76', '(01) 93184-8795', 'Rua South, 7, Loanda, Joao Monlevade, MG, 87965'),
+	('Mario', 'Kenobi', '558.455.975-55', '(02) 98948-8558', 'Rua Tatooine, 21, Republica, Joao Monlevade, MG, 81965'),
+	('Roger', 'Sparow', '558.425.985-65', '(08) 98948-0000', 'Rua Perola, 98, Industrial, Joao Monlevade, MG, 19786');
+
+
+
+-- Insere tuplas em Plano
+    INSERT INTO plano
+    VALUES
+    	(1, 'CONECT', '50mb', 70.00, 2),
+    	(2, 'ADVANCED', '150mb', 110.00, 3),
+    	(3, 'EXPERT', '300mb', 160.00, 4);
+
+
+-- Insere tuplas em Equipamento
+    INSERT INTO equipamento
+    VALUES
+    	('TP01324564', 2, 'TUPILINK-01', 'TUPI LINK', 35.5),
+	('TP01924564', 2, 'TUPILINK-01', 'TUPI LINK', 35.5),
+	('TP01324568', 2, 'TUPILINK-01', 'TUPI LINK', 35.5),
+	('TP01874564', 2, 'TUPILINK-01', 'TUPI LINK', 35.5),
+	('TP01344564', 2, 'TUPILINK-01', 'TUPI LINK', 35.5),
+    	('TU57898542', 3, 'TUPILINK-02', 'TUPI LINK', 69.9),
+	('TU41657952', 3, 'TUPILINK-02', 'TUPI LINK', 69.9),
+	('TU57998562', 3, 'TUPILINK-02', 'TUPI LINK', 69.9),
+	('TU41687952', 3, 'TUPILINK-02', 'TUPI LINK', 69.9),
+	('TU35487962', 3, 'TUPILINK-02', 'TUPI LINK', 69.9),
+	('TU65798825', 3, 'TUPILINK-02', 'TUPI LINK', 69.9),
+    	('DO57987521', 4, 'DOLINK-01', 'DO LINK', 98.9),
+	('DO54798324', 4, 'DOLINK-01', 'DO LINK', 98.9), 
+	('DO54787324', 4, 'DOLINK-01', 'DO LINK', 98.9),
+	('DO54798874', 4, 'DOLINK-02', 'DO LINK', 98.9),
+	('DO24689873', 4, 'DOLINK-02', 'DO LINK', 98.9);
+
+
+-- Insere tuplas em Contrato
+    INSERT INTO contrato
+    VALUES
+    	(1, 'Rua 1, 35, Alvorada, Joao Monlevade, MG, 12345', '2022/06/05', '2023/06/05', '888.665.555-76', 1, 'TP01324564'),
+    	(2, 'Rua Django, 85, Laranjeiras, Joao Monlevade, MG, 65489', '2022/01/20', '2023/01/20', '999.999.999-99', 1, 'TP01324568'),
+	(3, 'Rua 33, 99, Carneirinhos, Joao Monlevade, MG, 68798',  '2022/06/05', '2023/06/05', '111.111.222-22', 1, 'TP01874564'),
+    	(4, 'Rua Semfim, 54, Industrial, Joao Monlevade, MG, 59786', '2022/02/15', '2023/02/15', '255.566.668-79', 1, 'TP01344564'),
+    	(5, 'Rua Pera, 78, Carneirinhos, Joao Monlevade, MG, 5498', '2022/06/05', '2023/06/05', '256.879.668-79', 2, 'TU57898542'),
+	(6, 'Rua Hurt, 65, Loanda, Joao Monlevade, MG, 67986','2022/06/05', '2023/06/05', '875.665.486-87', 2, 'TU41657952'),
+	(7, 'Rua Nohand, 3, Industrial, Joao Monlevade, MG, 79865' , '2022/06/05', '2023/06/05', '111.486.975-76', 3, 'DO54798324'),
+	(8, 'Rua Tatooine, 2, Republica, Joao Monlevade, MG, 81965' , '2022/03/05', '2023/03/05', '111.486.975-76', 3, 'DO57987521'),
+	(9, 'Rua Inglorios, 10, Loanda, Joao Monlevade, MG, 12124', '2022/04/22', '2023/04/22', '999.999.999-99', 3, 'DO24689873');
+    
