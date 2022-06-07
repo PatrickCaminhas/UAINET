@@ -1,0 +1,422 @@
+	
+* { margin: 0; padding: 0; }
+
+body{
+background-color:white;
+height: 100%;
+
+    
+}
+.titleall{
+   position: fixed;
+    width: 100%;
+  /*  margin-top: 0px; */
+    z-index: 500;
+
+}
+
+
+
+.title{
+    font-size: 20px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(#002c6d,#083880);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+z-index: 500;   /*MENU */
+   
+}
+.titleimg{
+    width: 20%;
+    height: 20%;
+    z-index: 500;
+    
+}
+
+.title ul{
+   margin-top: 15px;
+      list-style: none;
+    float:right;
+     text-align: right;
+    z-index: 500;
+    
+}
+.title ul li{
+    display: inline-block;
+    z-index: 500;
+     
+}
+.title ul li a{
+    
+ color: white;
+  text-shadow: 2px 2px 4px #000000;
+    text-decoration:none;
+    padding: 15px;
+   /*transition: .9s ease;
+    -webkit-transition: .4s ease; */
+    display: block;
+    z-index: 500;
+
+}
+.title ul li a:hover{
+    background-color: #002c6d;	
+    color: white;
+    z-index: 500;
+    border-radius: 4px;
+
+}
+
+
+
+
+
+.botoes{
+    float: left;
+    position: relative;
+    left: 50%;
+    align-items: center;
+    
+}
+.botoesfixed{
+    float: left;
+    position: relative;
+    left: -50%;
+}
+
+.botoes ul{
+    
+    margin-top: 15px;
+    list-style: none;
+    text-align: right;
+    z-index: 500;
+     
+ }
+ .botoes ul li{
+     display: inline-block;
+     z-index: 500;
+     
+      
+ }
+ .botoes ul li a{
+     
+  color: white;
+  background-color: #083880;
+   text-shadow: 2px 2px 4px #000000;
+     text-decoration:none;
+     padding: 15px;
+    /*transition: .9s ease;
+     -webkit-transition: .4s ease; */
+     display: block;
+     z-index: 500;
+     border-radius: 4px;
+ 
+ }
+ .botoes ul li a:hover{
+     background-color: #002c6d;	
+     color: white;
+     z-index: 500;
+     border-radius: 4px;
+ 
+ }
+
+
+
+
+
+.botaologin{
+    background-color: #002c6d;	
+    color: white;
+    z-index: 500;
+    border-radius: 4px;
+    width: 70px;
+    height: 30px;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.botaologin:hover{
+    background-color: #083880;	
+    width: 70px;
+    height: 30px;
+    color: white;
+    z-index: 500;
+    border-radius: 4px;
+    
+
+}
+
+.title li  ul{
+position:absolute; 
+background-color: darkgray; 
+display:none;
+}   
+.title li:hover ul{display:block;}
+	
+.title li ul li{
+border:1px solid #000; 
+display:block; 
+width:150px;
+}
+
+.redesocial
+{
+    height: 50px;
+    width: 50px;
+    float:right;
+}
+
+
+
+
+
+
+/*ESPAÇO */
+.principal{
+	/*background-color: rgba(15,16,26,0.5); */
+    background-color: white;
+	margin: auto auto;
+	width: 100%;
+    height: 100%;
+}
+
+
+
+.titulocaixa{
+    font-size: 25px;
+    background-image: linear-gradient(#002c6d,#083880);
+    color: white;
+    width: 90%;
+    height: 30px;
+    color: white; 
+    text-shadow: black 0.1em 0.1em 0.2em;
+    
+}
+
+
+
+.footer
+{
+    font-size: 18px;
+    color:white;
+    background-image: linear-gradient(#002c6d,#083880);
+    text-align: center;
+    height: 60px;
+    margin-bottom: 0px;
+    width: 100%;
+    position: absolute;
+    
+}
+.footercontato
+{
+    font-size: 18px;
+    color:white;
+    background-image: linear-gradient(#002c6d,#083880);
+    text-align: center;
+    height: 60px;
+    bottom: 0px;
+    width: 100%;
+    position: absolute;
+    
+}
+
+
+.redessociais
+{
+    width: 100px;
+    height: 100px;
+    position:fixed;
+    right: 0px;
+    bottom: 100px;
+   width: 35px;
+   z-index: 100;
+}
+
+
+
+
+
+
+
+
+.caixasobre{
+    margin-left: 10%;
+    width: 80%;
+    height: 250px;
+    text-align: justify;      
+}
+.caixaformacao{
+    margin-left: 10%;
+    width: 80%;
+    height: 150px;
+    text-align: justify;
+        
+}
+    
+
+.imgsobre{
+    height: 150px;
+    width: 200px;
+    border-radius: 360px;
+    float:left;
+    margin-right: 30px;
+    margin-left: 5px;
+    
+}
+
+
+
+
+.textocaixa{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: justify;
+}
+
+.titulocontato{
+    font-size: 28px;
+    background-image: linear-gradient(#002c6d,#083880);
+    color: white;
+    width: 100%;
+    align-content: center;
+    height: 35px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+.titulocardapio{
+    font-size: 28px;
+    background-image: linear-gradient(#002c6d,#083880);
+    color: white;
+    width: 100%;
+    align-content: center;
+    height: 35px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+.caixatextocontato
+{
+    box-shadow: black 0.1em 0.1em 0.2em;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 25%;
+    width: 40%; 
+    
+    text-align: justify;
+}
+.caixatextocardapio
+{
+    box-shadow: black 0.1em 0.1em 0.2em;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 15%;
+    width: 70%; 
+    text-align: justify;
+}
+.caixatextocardapioinside
+{
+    box-shadow: black 0.1em 0.1em 0.2em;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: justify;
+}
+.textocontato{
+    margin-top: 5px;
+    margin-left: 35px;
+    margin-right: 35px;
+    text-align: justify;
+}
+
+
+#form {
+    background-color: #FFF;
+    
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0px;
+    text-align:center;
+}
+.labelcadastrologin{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    color: #333;
+    height: 20px;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: right;
+    clear: both;
+    float:left;
+    margin-right:15px;
+}
+.inputcadastrologin {
+    height: 20px;
+    width: 300px;
+    border: 1px solid #000;
+    margin-top: 10px;
+    float: left;
+    
+}
+
+
+
+
+.bordapedido{
+    border-width: 6px;
+    border-style: dashed;
+    border-color: #002c6d;
+}
+
+
+.textopedido{
+    margin-top: 5px;
+    margin-left: 35px;
+    
+    text-align: justify;
+
+}
+
+.ingredientescardapio{
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.nomecardapio{
+    
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.contato{
+    padding-top: 5%;
+    background-color: white;
+    padding-bottom: 10%;
+	margin: auto auto;
+	width: 100%;
+    height: 100%;
+}
+
+.inputcadastrologinbutton{
+    color: white;
+    background-color: #083880;
+     text-shadow: 2px 2px 4px #000000;
+       text-decoration:none;
+       padding: 10px;
+       margin-left: auto;
+    margin-right: auto; 
+      /*transition: .9s ease;
+       -webkit-transition: .4s ease; */
+       display: block;
+       z-index: 500;
+       border-radius: 4px;
+
+}
+.imgpaginacliente{
+    height: 400px;
+    width: 800px;
+    border-radius: 60px;
+    align-items: center;
+    margin-right: 30px;
+    margin-left: 5px;
+}
